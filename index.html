@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="back" class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-body p-5" id="bg">
+              <h2 id="song" class="fw-bold mb-0"></h2>
+      
+              <ul class="d-grid gap-4 my-5 list-unstyled small">
+                <li class="d-flex gap-4">
+                  <svg class="bi text-body-secondary flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                  <div class="song">
+                    <img id="poster" src="Album Art/On and On.jpg">
+                  </div>
+                </li>
+                <li class="d-flex gap-4">
+                  <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                  <div>
+                    <h5 id="label" class="mb-0"></h5>
+                  </div>
+                </li>
+                <li class="d-flex gap-4">
+                  <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"></use></svg>
+                  <div>
+                    <h5 id="artist" class="mb-0"></h5>
+                  </div>
+                </li>
+              </ul>
+              
+              <input id="seekbar" type="range" value="0" min="0" max="100" step="1">
+              <br>
+              <br>
+              <div class="flex-container">
+                <div class="item" id="prev"><i class="fa-solid fa-backward fa-2xl"></i></div>
+                <div class="item " id="pause"><i class="fa-solid fa-pause fa-2xl"></i></div>
+                <div class="item " id="next"><i class="fa-solid fa-forward fa-2xl"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

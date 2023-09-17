@@ -1,0 +1,56 @@
+#back{
+    background-image:url("7.gif");
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #f5aa3fff;
+    cursor: pointer;
+    width: 15rem;
+  }
+
+#bg{
+    background-color: #3d3d75ff;
+    border-radius: 20px;
+}
+
+h2,h5{
+    color: #f5aa3fff;
+}
+
+.flex-container{
+    background-color: #f5aa3fff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 15vh;
+    border-radius: 20px;
+}
+
+.item{
+    position: relative;
+    top:45%;
+    left: 2%;
+}
+
+.song{
+    background-color:#f5aa3fff;
+    position: relative;
+    right: 10%;
+    height: 30vh;
+    width: 80%;
+    border-radius: 20px;
+
+}
+
+#seekbar{
+    width:100%;
+}
+
+img{
+    height: 30vh;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
